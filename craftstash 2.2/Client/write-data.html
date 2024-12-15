@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/Client/CSS/write-data.css'>
+    <title>The Craft Stash</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="index">Home</a></li> 
+                <li><a href="write-data">Enter Data</a></li>
+                <li><a href="view-data">View Data</a></li>
+                <li><a href= "browse-data.html">Browse Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Input Data Page</h1>
+            <form id="dataForm">
+                <label for="productDescription">Product Name:<input type="text" id="productDescription" name="ProductDescription"></label>
+                <label for="color">Color:<input type="text" id="color" name="Color"></label>
+                <label for="manufacturer">Manufacturer:<input type="text" id="manufacturer" name="ManufacturerName"></label>
+                <label for="productType">Product Type:<input type="text" id="productType" name="ProductType"></label>
+                <label for="location">Location:<input type="text" id="location" name="Location"></label>
+                <label for="quantity">Quantity:<input type="text" id="quantity" name="Quantity"></label>
+                <div class="buttons">
+                    <button type="button" id="submitBtn">Submit</button>
+                    <button type="reset" id="clearBtn">Clear</button>
+                </div>
+            </form>
+        </main>
+    </div>   
+    <footer>
+        <p>&copy; 2024 Beatriz Santana</p>
+    </footer>
+    <!-- Removed async to ensure DOM is loaded first -->
+    <script src="/Client/js/write-data.js"></script>
+</body>
+</html>
